@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Elm Practice</title>
+  <script type="text/javascript" src="elm.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+  
+  <link rel="manifest" href="manifest.json">
+
+  <!-- Add to home screen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Elm Strings">
+  <link rel="apple-touch-icon" href="images/icons/icon-152x152.png">
+
+  <!-- Windows tiles settings -->  
+  <meta name="msapplication-TileImage" content="images/icons/icon-144x144.png">
+  <meta name="msapplication-TileColor" content="#4169e1">
+</head>
+
+<body>
+
+<header id="site-header">
+  <h1>Elm Practice</h1>
+  <p>Simple projects playing with elm syntax and structures</p>
+</header>
+
+<div id="stringmod" class="module-demo"></div>
+
+<footer id="site-footer">
+  <p>Source code on <a href="https://github.com/verythorough/elm-practice">GitHub</a></p>
+</footer>
+
+</body>
+
+<script type="text/javascript">
+Elm.embed(Elm.StringMod, document.getElementById('stringmod'));
+</script>
+<script src="service-worker-registration.js"></script>
+
+</html>
